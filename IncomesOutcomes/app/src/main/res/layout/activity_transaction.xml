@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".TransactionActivity">
+
+    <CheckBox
+        android:id="@+id/checkBox_Income"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#5bef20"
+        android:text="ΕΣΟΔΑ"
+        android:textColor="#252525"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Misthos"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#5bef20"
+        android:text="Mισθος"
+        android:textColor="#252525"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Type" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Exo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#5bef20"
+        android:text="Εξωτερικη Δουλεια"
+        android:textColor="#252525"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_Misthos"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Misthos" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Tzogos"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#5bef20"
+        android:text="Tζογος"
+        android:textColor="#252525"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_Exo"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Exo" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Outcome"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#f24949"
+        android:text="ΕΞΟΔΑ"
+        android:textColor="#252525"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Food"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:background="#f24949"
+        android:text="Φαγητο"
+        android:textColor="#252525"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Type" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Dei"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#f24949"
+        android:text="ΔΕΗ"
+        android:textColor="#252525"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_Food"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_Food"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Food" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Ote"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#f24949"
+        android:text="OTE"
+        android:textColor="#252525"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_Dei"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_Dei"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Dei" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Poto"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#f24949"
+        android:text="Ποτo"
+        android:textColor="#252525"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_Ote"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Ote" />
+
+    <TextView
+        android:id="@+id/textView_Amount"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#494646"
+        android:gravity="center"
+        android:text="Ποσό :"
+        android:textColor="#7ec301"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Imerominia" />
+
+    <TextView
+        android:id="@+id/textView_Imerominia"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#494646"
+        android:gravity="center"
+        android:text="Ημερ/νια :"
+        android:textColor="#7ec301"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Income" />
+
+    <TextView
+        android:id="@+id/textView_Type"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#494646"
+        android:gravity="center"
+        android:text="Eιδος"
+        android:textColor="#7ec301"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Amount" />
+
+    <EditText
+        android:id="@+id/editText_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="#494646"
+        android:ems="10"
+        android:hint=".......(€)"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_Amount"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEditTextImerominia"
+        app:layout_constraintStart_toStartOf="@+id/textViewEditTextImerominia" />
+
+    <TextView
+        android:id="@+id/textViewEditTextImerominia"
+        android:layout_width="215dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#494646"
+        android:gravity="center"
+        android:hint="Σημερα"
+        android:textAlignment="center"
+        android:textColor="#cecece"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_Imerominia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_Imerominia" />
+
+    <TextView
+        android:id="@+id/textView_AddFoto"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#494646"
+        android:gravity="center"
+        android:text="Προσθηκη Αποδειξης"
+        android:textColor="#7ec301"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_Ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#706d6d"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_Apodeixi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_AddFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_AddFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_Apodeixi" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+</android.support.constraint.ConstraintLayout>
